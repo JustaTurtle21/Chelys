@@ -3,7 +3,7 @@
 NixOS machine configuration for me.
 This is forked from the beautiful starter configuration made by fndov
 
-===========================================================================================
+========================================================================================
 ### This is a beginners guide to setting up a NixOS system using flakes.
 
 #### Why this flake?
