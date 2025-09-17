@@ -1,7 +1,56 @@
+<<<<<<< HEAD
 # Chelys
 NixOS machine configuration for me.
 This is forked from the beautiful starter configuration made by fndov
 
+=======
+### This is a beginners guide to setting up a NixOS system using flakes.
+
+#### Why this flake?
+
+* I'm offering the best structure from real world experience.
+
+When you checkout someone else's flake or want to modify your own, it should make sense where things are.
+
+This flake assumes you already have NixOS installed and are ready to transition to flakes, home manager is included.
+
+Benefits of using flakes include:
+- Version locking
+- Mix stable & unstable with ease
+- Compatable with third party modules
+- True reproducability
+
+2 desktops & 2 profiles are provided to begin with.
+
+Structure
+```
+┌─ modules
+│  ├─ apps
+│  ├─ commands
+│  └─ desktop
+└─ profile
+    ├─ home
+    └─ workstation
+```
+Import flow
+```
+┌─ flake.nix                (Start)
+├─ compose.nix              (Common code)
+├─ profile/
+│  └─ home/
+│     ├─ configuration.nix  (Select your modules)
+│     └─ hardware.nix
+└─ modules/
+   ├─ apps/
+   │  └─ software.nix       (Package list)
+   ├─ commands/
+   │  ├─ software.nix       (Package list)
+   │  └─ shell.nix
+   └─ desktop/
+      └─ gnome.nix          (Your desktop)
+
+```
+>>>>>>> 52380c9 (Initialization)
 ---
 ### Setup
 ```
