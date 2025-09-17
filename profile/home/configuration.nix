@@ -2,8 +2,7 @@
   imports = [
     # Import any modules or take them out
     ../../modules/desktop/gnome.nix
-    ../../modules/apps/software.nix
-    ../../modules/apps/zed.nix
+    ../../modules/apps/apps.nix
     ../../modules/commands/commands.nix
   ];
   # One line to change the kernel, comment out to use LTS
