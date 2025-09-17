@@ -6,13 +6,31 @@ This is forked from the beautiful starter configuration made by fndov
 ========================================================================================
 Structure
 ```
-┌─ modules
-│  ├─ apps
-│  ├─ commands
-│  └─ desktop
-└─ profile
-    ├─ home
-    └─ workstation
+├── compose.nix
+├── flake.lock
+├── flake.nix
+├── modules
+│   ├── apps
+│   │   ├── software.nix
+│   │   └── zed.nix
+│   ├── commands
+│   │   ├── commands.nix
+│   │   ├── fastfetch.nix
+│   │   ├── shell.nix
+│   │   ├── software.nix
+│   │   └── zsh.nix
+│   └── desktop
+│       ├── deepin.nix
+│       ├── gnome.nix
+│       └── plasma.nix
+├── profile
+│   ├── home
+│   │   ├── configuration.nix
+│   │   └── hardware.nix
+│   └── workstation
+│       ├── configuration.nix
+│       └── hardware.nix
+
 ```
 Import flow
 ```
