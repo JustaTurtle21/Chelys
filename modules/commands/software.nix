@@ -11,6 +11,7 @@ in{
     glib
     glibc
     vim
+    fastfetch
   ];
 
 }

@@ -12,7 +12,7 @@ in{
         userSettings = {
 
             autosave = "on_focus_change";
-            vim_mode = true;
+            vim_mode = false;
             indent_guides = {
               enabled = true;
               coloring = "indent_aware";
