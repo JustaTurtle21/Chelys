@@ -24,7 +24,6 @@
   nixpkgs.config.allowUnfree = true;
 
   # Enables blender with cuda and optix
-  nixpkgs.overlays = [ blender-bin.overlays.default ];
 
   hardware.graphics.enable = true;
   hardware.nvidia.open = false;
