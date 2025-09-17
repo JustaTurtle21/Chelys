@@ -23,8 +23,10 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  hardware.graphics.enable = true;
+  # Enables blender with cuda and optix
+  nixpkgs.overlays = [ blender-bin.overlays.default ];
 
+  hardware.graphics.enable = true;
   hardware.nvidia.open = false;
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.production;
   boot.blacklistedKernelModules = [ "nouveau" ];

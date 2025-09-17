@@ -9,6 +9,7 @@ in{
     firefox
     vim
     vscodium
+    blender
   ];
   # Check https://search.nixos.org/packages to see which packages are available
 }

@@ -5,6 +5,7 @@
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    blender-bin.url = "github:edolstra/nix-warez?dir=blender";
   };
   outputs = inputs@{ ... }: let
     settings = {

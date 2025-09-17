@@ -5,7 +5,7 @@
     ../../modules/apps/apps.nix
     ../../modules/commands/commands.nix
   ];
-  # One line to change the kernel, comment out to use LTS
+  # One line to change the kernel, comment out to use latest
   # boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ ];
   boot.blacklistedKernelModules = [ ];
