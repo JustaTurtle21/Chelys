@@ -37,6 +37,14 @@
     "nvidia"
   ];
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.fira-code
+    lexend
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+  ];
+
   /* Compressed memory */
   services.zram-generator.enable = true;
   services.zram-generator.settings.zram0.zram-size = "ram * 2";
