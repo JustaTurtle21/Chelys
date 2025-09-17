@@ -1,5 +1,5 @@
 # Chelys
-NixOS machine configuration for me
+NixOS machine configuration for me.
 This is forked from the beautiful starter configuration made by fndov
 
 ---
