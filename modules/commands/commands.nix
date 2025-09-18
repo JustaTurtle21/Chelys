@@ -5,5 +5,6 @@
     ./software.nix
     ./zsh.nix
     ./fastfetch.nix
+    ./plymouth.nix
   ];
 }
