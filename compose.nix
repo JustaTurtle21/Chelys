@@ -23,7 +23,11 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Enables blender with cuda and optix
+  # Enables podman for distrobox
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = true;
+  };
 
   hardware.graphics.enable = true;
   hardware.nvidia.open = false;
