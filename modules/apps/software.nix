@@ -11,6 +11,7 @@ in{
     bottles
     distrobox
     pureref
+    davinci-resolve
     inputs.nix-warez.packages.${system}.blender_4_5
   ];
   # Check https://search.nixos.org/packages to see which packages are available
