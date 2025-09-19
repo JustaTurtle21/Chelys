@@ -24,9 +24,10 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-   fileSystems."/mnt/personal" =
-    { device = "/dev/disk/by-uuid/01DC0536C3453DA0";
-      fsType = "ntfs";
+  fileSystems."/home/justaturtle/Personal" =
+    { device = "/dev/disk/by-uuid/4cb8b964-d42b-4c73-86bb-776deafc58b5";
+      fsType = "ext4";
+      options = ["nofail" "defaults" "uid=1000" "gid=100"];
     };
 
   swapDevices =

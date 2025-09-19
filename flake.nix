@@ -17,6 +17,7 @@
     };
 
     system = "x86_64-linux";               # System architecture
+    nixpkgs.config.allowUnfree = true;
   in {
     nixosConfigurations.home = inputs.nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs system settings; };

@@ -11,8 +11,9 @@ in{
     bottles
     distrobox
     pureref
-    davinci-resolve
+    #unstable.davinci-resolve
     inputs.nix-warez.packages.${system}.blender_4_5
   ];
+  nixpkgs.config.allowUnfree = true;
   # Check https://search.nixos.org/packages to see which packages are available
 }

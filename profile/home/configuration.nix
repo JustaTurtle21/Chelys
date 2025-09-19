@@ -15,4 +15,5 @@
     "rd.systemd.show_status=auto"
   ];
   boot.blacklistedKernelModules = [ ];
+  nixpkgs.config.allowUnfree = true;
 }

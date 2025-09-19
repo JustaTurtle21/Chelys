@@ -13,9 +13,10 @@ in{
       enable = true;
       plugins = ["vscode" "git"];
     };
-    initContent = lib.mkAfter "
+    initContent = lib.mkAfter ''
         fastfetch
-     ";
+        export OCIO="/home/justaturtle/PixelManager-master"
+    '';
     autosuggestion = {
       enable = true;
       strategy = [
