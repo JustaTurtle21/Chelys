@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
@@ -22,12 +22,6 @@
     { device = "/dev/disk/by-uuid/BECB-8524";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
-    };
-
-  fileSystems."/home/justaturtle/Personal" =
-    { device = "/dev/disk/by-uuid/4cb8b964-d42b-4c73-86bb-776deafc58b5";
-      fsType = "ext4";
-      options = ["nofail" "defaults" "uid=1000" "gid=100"];
     };
 
   swapDevices =
